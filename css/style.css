@@ -1,0 +1,136 @@
+/*------------ Color Palette ------------*/
+/*
+LIGHT ORANGE: #e4644b
+DARK ORANGE: #d05942
+DARK BROWN: #484141
+Menu text: #f7f1e3
+Submenu text: #ae9f9f
+*/
+
+/*------------ General Settings ------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	font-family: 'Montserrat', sans-serif;
+	background: url("../images/bg.jpg") top center repeat;
+	letter-spacing: 0.2px;
+}
+
+ul {
+	list-style: none;
+	width: 276px;
+}
+
+li {
+	cursor: pointer;
+}
+
+/*------------ Main Menu ------------*/
+.container {
+	background-color: black;
+}
+
+/*------------ Main Menu ------------*/
+.mainmenu {
+	margin: 90px auto;
+	font-size: 16px;
+	position:relative;
+	padding:0;
+}
+
+.mainmenu > li {
+	background-color: #e4644b;
+	border-top: 1px solid #d05942;
+	height: 48px;
+	color: #f7f1e3;
+	box-sizing: border-box;
+}
+
+.mainmenu > li:first-child {
+	border-radius: 7px 7px 0 0;
+	border-top: 0;
+}
+
+.mainmenu > li:last-child {
+	border-radius: 0 0 7px 7px;
+}
+
+.mainmenu > li span {
+	display:block;
+	line-height: 48px;
+}
+
+.mainmenu > li .icon {
+	padding: 14px 20px 0 20px;
+	float: left;
+	width: 20px;
+	height: 20px;
+	display:block;
+}
+
+.mainmenu > li .messages {
+	background: url("../images/messages.png") no-repeat;
+	padding: 0;
+	margin-top: -33px;
+	margin-right: 19px;
+	float: right;
+	display: block;
+	width: 34px;
+	height: 18px;
+	text-align: center;
+	font-size: 11px;
+	line-height: 19px;
+}
+
+.expand-triangle {
+	background: url("../images/expand.gif") top left no-repeat;
+	height: 10px;
+	width: 276px;
+	content: " ";
+	margin-left: -40px;
+}
+
+/*------------ Sub Menu ------------*/
+.submenu {
+	box-sizing: border-box;
+	color: #ae9f9f;
+	font-size: 13px;
+	content: " ";
+	/*opacity: 0.5;*/
+}
+
+.submenu li {
+	line-height: 20px;
+	height: 35px;
+	padding-top: 11px;
+	margin-left: -40px;
+	background-color: #484141;
+	border-left: solid 6px #484141;
+	transition: border-left 220ms ease-in;
+}
+
+.submenu .chosen,
+.submenu .chosen:hover {
+	border-left: solid 6px #96d145;
+}
+
+.submenu li:hover {
+	border-left: solid 6px #d05942;
+}
+
+.submenu li span {
+	margin-left:30px;
+}
+
+.animate {
+	animation: flip 2000ms ease-in-out alternate;
+}
+
+@keyframes flip {
+	to {
+		transform: rotateY(360deg);
+	}
+}
