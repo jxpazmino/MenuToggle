@@ -99,7 +99,6 @@ li {
     box-sizing: border-box;
     content: " ";
     color: #ae9f9f;
-    /*opacity: 0.5;*/
 }
 
 .submenu li {
@@ -123,14 +122,4 @@ li {
 
 .submenu li span {
     margin-left: 30px;
-}
-
-.animate {
-    animation: flip 2000ms ease-in-out alternate;
-}
-
-@keyframes flip {
-    to {
-        transform: rotateY(360deg);
-    }
 }
