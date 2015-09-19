@@ -11,126 +11,126 @@ Submenu text: #ae9f9f
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body {
-	overflow:hidden;
-	margin:0;
-	padding:0;
-	font-family: 'Montserrat', sans-serif;
-	background: url("../images/bg.jpg") top center repeat;
-	letter-spacing: 0.2px;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    letter-spacing: .2px;
+    background: url("../images/bg.jpg") top center repeat;
 }
 
 ul {
-	list-style: none;
-	width: 276px;
+    width: 276px;
+    list-style: none;
 }
 
 li {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 /*------------ Main Menu ------------*/
 .mainmenu {
-	margin: 90px auto;
-	font-size: 16px;
-	position:relative;
-	padding:0;
+    font-size: 16px;
+    position: relative;
+    margin: 90px auto;
+    padding: 0;
 }
 
 .mainmenu > li {
-	background-color: #e4644b;
-	border-top: 1px solid #d05942;
-	height: 48px;
-	color: #f7f1e3;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    height: 48px;
+    color: #f7f1e3;
+    border-top: 1px solid #d05942;
+    background-color: #e4644b;
 }
 
 .mainmenu > li:first-child {
-	border-radius: 7px 7px 0 0;
-	border-top: 0;
+    border-top: 0;
+    border-radius: 7px 7px 0 0;
 }
 
 .mainmenu > li:last-child {
-	border-radius: 0 0 7px 7px;
+    border-radius: 0 0 7px 7px;
 }
 
 .mainmenu > li span {
-	display:block;
-	line-height: 48px;
+    line-height: 48px;
+    display: block;
 }
 
 .mainmenu > li .icon {
-	padding: 14px 20px 0 20px;
-	float: left;
-	width: 20px;
-	height: 20px;
-	display:block;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    padding: 14px 20px 0 20px;
 }
 
 .mainmenu > li .messages {
-	background: url("../images/messages.png") no-repeat;
-	padding: 0;
-	margin-top: -33px;
-	margin-right: 19px;
-	float: right;
-	display: block;
-	width: 34px;
-	height: 18px;
-	text-align: center;
-	font-size: 11px;
-	line-height: 19px;
+    font-size: 11px;
+    line-height: 19px;
+    display: block;
+    float: right;
+    width: 34px;
+    height: 18px;
+    margin-top: -33px;
+    margin-right: 19px;
+    padding: 0;
+    text-align: center;
+    background: url("../images/messages.png") no-repeat;
 }
 
 .expand-triangle {
-	height: 10px;
-	width: 276px;
-	content: " ";
-	margin-left: -40px;
-	margin-top:-4px;
+    width: 276px;
+    height: 10px;
+    margin-top: -4px;
+    margin-left: -40px;
+    content: " ";
 }
 
 .expand-triangle img {
-	height: 10px;
-	width: 276px;
+    width: 276px;
+    height: 10px;
 }
 
 /*------------ Sub Menu ------------*/
 .submenu {
-	box-sizing: border-box;
-	color: #ae9f9f;
-	font-size: 13px;
-	content: " ";
-	/*opacity: 0.5;*/
+    font-size: 13px;
+    box-sizing: border-box;
+    content: " ";
+    color: #ae9f9f;
+    /*opacity: 0.5;*/
 }
 
 .submenu li {
-	line-height: 20px;
-	height: 35px;
-	padding-top: 11px;
-	margin-left: -40px;
-	background-color: #484141;
-	border-left: solid 6px #484141;
-	transition: border-left 220ms ease-in;
+    line-height: 20px;
+    height: 35px;
+    margin-left: -40px;
+    padding-top: 11px;
+    transition: border-left 220ms ease-in;
+    border-left: solid 6px #484141;
+    background-color: #484141;
 }
 
 .submenu .chosen,
 .submenu .chosen:hover {
-	border-left: solid 6px #96d145;
+    border-left: solid 6px #96d145;
 }
 
 .submenu li:hover {
-	border-left: solid 6px #d05942;
+    border-left: solid 6px #d05942;
 }
 
 .submenu li span {
-	margin-left:30px;
+    margin-left: 30px;
 }
 
 .animate {
-	animation: flip 2000ms ease-in-out alternate;
+    animation: flip 2000ms ease-in-out alternate;
 }
 
 @keyframes flip {
-	to {
-		transform: rotateY(360deg);
-	}
+    to {
+        transform: rotateY(360deg);
+    }
 }
