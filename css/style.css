@@ -83,14 +83,14 @@ li {
 .expand-triangle {
     width: 276px;
     height: 10px;
-    margin-top: -4px;
-    margin-left: -40px;
     content: " ";
 }
 
 .expand-triangle img {
     width: 276px;
     height: 10px;
+	vertical-align: top;
+	margin-left: -40px;
 }
 
 /*------------ Sub Menu ------------*/
