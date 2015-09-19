@@ -87,10 +87,10 @@ li {
 }
 
 .expand-triangle img {
-    width: 276px;
-    height: 10px;
-	vertical-align: top;
-	margin-left: -40px;
+    width: inherit;
+    height: inherit;
+    margin-left: -40px;
+    vertical-align: top;
 }
 
 /*------------ Sub Menu ------------*/
