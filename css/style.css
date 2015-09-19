@@ -29,11 +29,6 @@ li {
 }
 
 /*------------ Main Menu ------------*/
-.container {
-	background-color: black;
-}
-
-/*------------ Main Menu ------------*/
 .mainmenu {
 	margin: 90px auto;
 	font-size: 16px;
@@ -86,11 +81,16 @@ li {
 }
 
 .expand-triangle {
-	background: url("../images/expand.gif") top left no-repeat;
 	height: 10px;
 	width: 276px;
 	content: " ";
 	margin-left: -40px;
+	margin-top:-4px;
+}
+
+.expand-triangle img {
+	height: 10px;
+	width: 276px;
 }
 
 /*------------ Sub Menu ------------*/
